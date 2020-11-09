@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">CoronaApp</string>
+    <string name="home">Home</string>
+    <string name="stats">Stats</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="covidStat">COVID19 STATS</string>
+    <string name="info">This data changes rapidly and might not reflect some cases still being reported. You may refresh records periodically to reflect changes</string>
+    <string name="total_cases">Total Cases</string>
+    <string name="strip">-</string>
+    <string name="new_cases">New Cases</string>
+    <string name="total_deaths">Total Deaths</string>
+    <string name="new_deaths">New Deaths</string>
+    <string name="total_recovered">Total Recovered</string>
+    <string name="newRecovered">New Recovered</string>
 </resources>
