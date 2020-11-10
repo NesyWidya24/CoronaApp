@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         initFragment();
 
         refreshBtn.setOnClickListener(view -> {
-
+            homeFragment.onResume();
         });
 
         navView.setOnNavigationItemSelectedListener(this);

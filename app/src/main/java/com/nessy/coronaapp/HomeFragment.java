@@ -58,6 +58,12 @@ public class HomeFragment extends Fragment {
         return view;
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        loadHomeData();
+    }
+
     private void loadHomeData(){
         //show progress
         progressBar.setVisibility(View.VISIBLE);
