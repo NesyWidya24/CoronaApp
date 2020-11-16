@@ -16,8 +16,6 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
     private TextView titleTv;
-    private ImageButton refreshBtn;
-    private BottomNavigationView navView;
 
     private Fragment homeFragment, statsFragment;
     private Fragment activeFragment;
@@ -29,13 +27,14 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         setContentView(R.layout.activity_main);
 
         titleTv = findViewById(R.id.titleTv);
-        refreshBtn = findViewById(R.id.refreshBtn);
-        navView = findViewById(R.id.nav_view);
+        ImageButton refreshBtn = findViewById(R.id.refreshBtn);
+        BottomNavigationView navView = findViewById(R.id.nav_view);
 
         initFragment();
 
         refreshBtn.setOnClickListener(view -> {
             homeFragment.onResume();
+            statsFragment.onResume();
         });
 
         navView.setOnNavigationItemSelectedListener(this);

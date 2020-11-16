@@ -20,4 +20,5 @@
     <string name="todayDeaths">Today Deaths</string>
     <string name="recovered">Recovered</string>
     <string name="todayRecovered">Today Recovered</string>
+    <string name="search">Search</string>
 </resources>

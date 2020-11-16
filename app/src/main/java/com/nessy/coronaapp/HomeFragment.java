@@ -52,7 +52,7 @@ public class HomeFragment extends Fragment {
         totalRecoveredTv = view.findViewById(R.id.totalRecoveredTv);
         newRecoveredTv = view.findViewById(R.id.newRecoveredTv);
 
-        progressBar.setVisibility(View.INVISIBLE);
+        progressBar.setVisibility(View.GONE);
 
         loadHomeData();
         return view;
@@ -70,7 +70,7 @@ public class HomeFragment extends Fragment {
 
         //JSON String request
         StringRequest stringRequest = new StringRequest(Request.Method.GET, STATS_URL, this::handleResponse, error -> {
-            //some error occured, hide progress, show error msg
+            //some error occurred, hide progress, show error msg
             progressBar.setVisibility(View.GONE);
             Toast.makeText(context, "" + error.getMessage(), Toast.LENGTH_SHORT).show();
         });
@@ -110,5 +110,4 @@ public class HomeFragment extends Fragment {
             Toast.makeText(context, "" + e.getMessage(), Toast.LENGTH_SHORT).show();
         }
     }
-
 }
